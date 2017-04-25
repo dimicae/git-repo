@@ -1,0 +1,16 @@
+create table EMPLOYEES (
+EMPLOYEE_ID NUMBER(6) not null,
+FIRST_NAME varchar2(20 BYTE) not null,
+LAST_NAME varchar2(25 BYTE) not null,
+EMAIL  varchar2(25 BYTE) not null,
+PHONE_NUMBER varchar2(20 BYTE) not null,
+HIRE_DATE DATE not null,
+JOB_ID varchar2(10 BYTE) not null,
+SALARY NUMBER(8,2)  not null,
+COMMISSION_PCT NUMBER(2,2)  not null,
+MANAGER_ID   NUMBER(6)  not null,
+DEPARTMENT_ID  NUMBER(4)  not null
+);
+
+
+create unique index IndSal on EMPLOYEES(SALARY);
